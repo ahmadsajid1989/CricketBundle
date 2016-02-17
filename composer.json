@@ -1,5 +1,5 @@
 {
-    "name": "Bongo/CricketBundle",
+    "name": "bongo/cricket-bundle",
     "description" : "The Cricket Application For Bongo BD",
     "license": "proprietary",
     "type": "symfony-bundle",
@@ -29,7 +29,7 @@
         "stof/doctrine-extensions-bundle": "^1.2"
 
     },
-    "target-dir" : "Bongo/CricketBundle",
+    "target-dir" : "bongo/cricket-bundle",
     "repositories" : [{
   }],
     "extra" : {
