@@ -1,0 +1,42 @@
+{
+    "name": "Bongo/CricketBundle",
+    "description" : "The Cricket Application For Bongo BD",
+    "license": "proprietary",
+    "type": "symfony-bundle",
+    "authors" : [{
+        "name" : "Ahmad Sajid",
+        "email" : "ahmad@bongobd.com"
+  }],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/symfony": "2.7.*",
+        "doctrine/orm": "^2.4.8",
+        "doctrine/doctrine-bundle": "~1.4",
+        "symfony/assetic-bundle": "~2.3",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "~4.0",
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "gedmo/doctrine-extensions":     "dev-master",
+        "pusher/pusher-php-server": "^2.2",
+        "laupifrpar/pusher-bundle": "^1.2",
+        "stof/doctrine-extensions-bundle": "^1.2"
+
+    },
+    "target-dir" : "Bongo/CricketBundle",
+    "repositories" : [{
+  }],
+    "extra" : {
+    "branch-alias" : {
+          "dev-master" : "dev-1.1"
+    }
+  }
+
+
+}

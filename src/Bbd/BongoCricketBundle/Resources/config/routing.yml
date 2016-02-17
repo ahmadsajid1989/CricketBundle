@@ -1,0 +1,27 @@
+bbd_bongo_cricket_match:
+    resource: "@BbdBongoCricketBundle/Resources/config/routing/match.yml"
+    prefix:   /match
+
+bbd_bongo_cricket_bbd_cricket_team:
+    resource: "@BbdBongoCricketBundle/Resources/config/routing/team.yml"
+    prefix:   /team
+
+bbd_bongo_cricket_page:
+    path:     /cricket
+    defaults: { _controller: BbdBongoCricketBundle:Cricket:index }
+
+lopi_pusher:
+    resource: "@LopiPusherBundle/Resources/config/routing.xml"
+    prefix:   /pusher
+
+bbd_bongo_pusher_page:
+    path:     /pusher_request
+    defaults: { _controller: BbdBongoCricketBundle:Cricket:triggerPusher }
+
+bbd_bongo_pusher_result:
+    path:     /pusher_result
+    defaults: { _controller: BbdBongoCricketBundle:Cricket:resultPusher }
+
+bbd_bongo_cricket_homepage:
+    path:     /{name}
+    defaults: { _controller: BbdBongoCricketBundle:Default:index }

@@ -1,0 +1,30 @@
+match:
+    path:     /
+    defaults: { _controller: "BbdBongoCricketBundle:Match:index" }
+
+match_show:
+    path:     /{id}/show
+    defaults: { _controller: "BbdBongoCricketBundle:Match:show" }
+
+match_new:
+    path:     /new
+    defaults: { _controller: "BbdBongoCricketBundle:Match:new" }
+
+match_create:
+    path:     /create
+    defaults: { _controller: "BbdBongoCricketBundle:Match:create" }
+    methods:  POST
+
+match_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BbdBongoCricketBundle:Match:edit" }
+
+match_update:
+    path:     /{id}/update
+    defaults: { _controller: "BbdBongoCricketBundle:Match:update" }
+    methods:  [POST, PUT]
+
+match_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BbdBongoCricketBundle:Match:delete" }
+    methods:  [POST, DELETE]

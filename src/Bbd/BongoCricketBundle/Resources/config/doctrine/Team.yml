@@ -1,0 +1,24 @@
+Bbd\BongoCricketBundle\Entity\Team:
+   type: entity
+   table: cricket_team
+   id:
+       id:
+           type: integer
+           generator: { strategy: AUTO }
+   fields:
+       name:
+           type: string
+           length: 255
+           unique: true
+       slug:
+          type: string
+          gedmo:
+            slug:
+              separator: -
+              fields:
+                  -name
+       created_at:
+           type: datetime
+
+   lifecycleCallbacks:
+              prePersist: [ setCreatedAtValue]

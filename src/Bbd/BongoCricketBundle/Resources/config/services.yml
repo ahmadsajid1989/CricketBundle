@@ -1,0 +1,4 @@
+services:
+#    bbd_bongo_cricket.example:
+#        class: Bbd\BongoCricketBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

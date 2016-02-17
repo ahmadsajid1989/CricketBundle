@@ -1,0 +1,30 @@
+Bbd\BongoCricketBundle\Entity\Match:
+   type: entity
+   table: cricket_match
+   id:
+       id:
+           type: integer
+           generator: { strategy: AUTO }
+   fields:
+       home_team:
+           type: string
+           length: 255
+       away_team:
+           type: string
+           length: 255
+       match_number:
+           type: integer
+       match_type:
+           type: string
+           length: 85
+       match_date:
+           type: datetime
+       created_at:
+           type: datetime
+       updated_at:
+           type: datetime
+           nullable: true
+
+   lifecycleCallbacks:
+              prePersist: [setCreatedAtValue]
+              preUpdate:  [setUpdateAtValue]

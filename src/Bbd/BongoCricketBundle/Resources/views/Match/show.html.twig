@@ -1,0 +1,56 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Match</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Home_team</th>
+                <td>{{ entity.hometeam }}</td>
+            </tr>
+            <tr>
+                <th>Away_team</th>
+                <td>{{ entity.awayteam }}</td>
+            </tr>
+            <tr>
+                <th>Match_number</th>
+                <td>{{ entity.matchnumber }}</td>
+            </tr>
+            <tr>
+                <th>Match_type</th>
+                <td>{{ entity.matchtype }}</td>
+            </tr>
+            <tr>
+                <th>Match_date</th>
+                <td>{{ entity.matchdate|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Created_at</th>
+                <td>{{ entity.createdat|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Updated_at</th>
+                <td>{{ entity.updatedat|date('Y-m-d H:i:s') }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('match') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('match_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

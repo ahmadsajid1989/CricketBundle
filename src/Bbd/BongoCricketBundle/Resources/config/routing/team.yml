@@ -1,0 +1,30 @@
+bbd_cricket_team:
+    path:     /
+    defaults: { _controller: "BbdBongoCricketBundle:Team:index" }
+
+bbd_cricket_team_show:
+    path:     /{id}/show
+    defaults: { _controller: "BbdBongoCricketBundle:Team:show" }
+
+bbd_cricket_team_new:
+    path:     /new
+    defaults: { _controller: "BbdBongoCricketBundle:Team:new" }
+
+bbd_cricket_team_create:
+    path:     /create
+    defaults: { _controller: "BbdBongoCricketBundle:Team:create" }
+    methods:  POST
+
+bbd_cricket_team_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BbdBongoCricketBundle:Team:edit" }
+
+bbd_cricket_team_update:
+    path:     /{id}/update
+    defaults: { _controller: "BbdBongoCricketBundle:Team:update" }
+    methods:  [POST, PUT]
+
+bbd_cricket_team_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BbdBongoCricketBundle:Team:delete" }
+    methods:  [POST, DELETE]

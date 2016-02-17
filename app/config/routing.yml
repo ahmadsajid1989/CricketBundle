@@ -1,0 +1,3 @@
+bbd_bongo_cricket:
+    resource: "@BbdBongoCricketBundle/Resources/config/routing.yml"
+    prefix:   /
